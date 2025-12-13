@@ -17,25 +17,27 @@
 /* کامپوننت مربوط به سدان و کوپه */
 @layer components {
   .cars-wrapper {
-    @apply w-10/12 h-32 flex justify-between items-center gap-2 mt-38;
+    @apply w-11/12 md:w-10/12 h-auto md:h-32 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-2 mt-20 md:mt-38;
+  
     .car-box {
-      @apply relative w-full h-full border border-gray-300 rounded-lg overflow-hidden flex flex-col justify-center items-center bg-white;
+      @apply relative w-full md:w-full h-24 md:h-full border border-gray-300 rounded-lg overflow-hidden flex flex-col justify-center items-center bg-white;
       .car-title {
-        @apply absolute top-2
-             w-full h-8
+        @apply  absolute top-1 md:top-2
+             w-full h-6 md:h-8
              flex justify-center items-center 
-             font-bold text-2xl
+             font-bold text-lg md:text-2xl
              text-black;
         font-family: font;
       }
       .car-img {
-        @apply absolute top-6;
-        width: 232px;
-        height: 110px;
+        @apply absolute top-4 md:top-6;
+        width: 180px;
+        height: 85px;
         z-index: 1;
+        object-fit: contain;
       }
       .car-bottom-bar {
-        @apply absolute w-11/12 h-4
+         @apply absolute w-11/12 h-3 md:h-4
            rounded-md bg-[#FDB713] -bottom-2;
       }
     }
@@ -69,3 +71,4 @@
           hover:bg-blue-800;
   }
 }
+

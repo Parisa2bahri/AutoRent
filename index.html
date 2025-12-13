@@ -377,7 +377,7 @@
             <use href="#logo-head"></use>
           </svg>
         </div>
-        <div class="w-fit h-fit flex justify-center items-center gap-10">
+        <div class="w-fit h-fit flex justify-center items-center gap-10 hidden md:flex">
           <a class="hover:bg-gray-50 rounded-2xl p-3" href="">رزرو خودرو</a>
           <a class="hover:bg-gray-50 rounded-2xl p-3" href="">خدمات ما</a>
           <a class="hover:bg-gray-50 rounded-2xl p-3" href="">بلاگ</a>
@@ -407,17 +407,20 @@
           class="bg-[url('../images/banner(cover).png')] bg-no-repeat w-full h-144.75 pr-27 space-y-5"
         >
           <!-- اتورنت -->
+          <!-- اتورنت -->
           <div class="w-83.75 h-31">
             <h1 class="font-extrabold text-Secondary text-4xl">
               اُتـــو رِنت؛ سریع، آسان و به صرفه
             </h1>
           </div>
+
           <!-- توضیحات اتورنت -->
-          <div class="w-115 h-9">
-            <p class="text-white">
-              سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
-            </p>
-          </div>
+         <div class="w-115 h-9 max-md:w-full max-md:h-auto max-md:flex max-md:justify-center">
+  <p class="text-white max-md:text-xs max-md:text-center">
+    سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+  </p>
+</div>
+
           <!-- دکمه ها -->
           <div class="">
             <button
@@ -436,10 +439,10 @@
         </div>
         <!-- باکس شناور بنر -->
         <div
-          class="w-10/12 bg-white absolute -bottom-25 rounded-2xl px-5 py-3 flex flex-col gap-4"
+          class="w-10/12 bg-white absolute -bottom-25 hidden md:flex rounded-2xl px-5 py-3 flex flex-col gap-4"
         >
           <!-- بخش اول (دکمه ها)  -->
-          <div class="w-full flex justify-between items-center">
+          <div class="w-full flex justify-between items-center hidden md:flex">
             <div class="">
               <button
                 type="button"
@@ -467,7 +470,7 @@
             </div>
           </div>
           <!-- بخش دوم (مشخصات تحویل خودروها)  -->
-          <div class="w-full pl-20 flex justify-between items-center">
+          <div class="w-full pl-20 flex justify-between items-center hidden md:flex">
             <div class="">
               <div class="flex justify-center items-center space-x-1">
                 <img
@@ -478,8 +481,8 @@
                 <p class="text-sm">محل تحویل خودرو</p>
               </div>
             </div>
-            <div class="flex gap-5">
-              <div class="w-fit flex justify-center items-center space-x-1">
+            <div class="flex gap-5 hidden md:flex">
+              <div class="w-fit flex justify-center items-center space-x-1 hidden md:flex">
                 <img
                   class="w-4 h-4"
                   src="./images/arrow-left.png"
@@ -487,7 +490,7 @@
                 />
                 <p class="text-sm">تاریخ تحویل</p>
               </div>
-              <div class="w-fit flex justify-center items-center space-x-1">
+              <div class="w-fit flex justify-center items-center space-x-1 hidden md:flex">
                 <img
                   class="w-4 h-4"
                   src="./images/arrow-left.png"
@@ -515,7 +518,7 @@
           </div>
           <!-- بخش سوم (انتخاب و فیلتر ها)  -->
           <div
-            class="w-full py-3 px-3.5 flex items-center justify-center gap-3 border border-gray-200 rounded-2xl"
+            class="w-full py-3 px-3.5 flex items-center hidden md:flex justify-center gap-3 border border-gray-200 rounded-2xl"
           >
             <div class="w-5/10">
               <div class="relative group">
@@ -603,10 +606,10 @@
         <div
           class="w-8/12 h-full flex flex-col items-center justify-start space-y-2 relative"
         >
-          <h2 class="text-Secondary text-2xl font-bold">
+          <h2 class="text-Secondary text-2xl font-bold md:text-sm">
             چــــــرا اُتو رِنت؟
           </h2>
-          <p class="text-white text-center">
+          <p class="text-white text-center max-md:text-xs max-md:text-center ">
             اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در
             مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین
             مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار
@@ -618,7 +621,7 @@
             class="flex justify-center items-center mx-auto absolute -bottom-22 space-x-10"
           >
             <div
-              class="w-78 h-46.5 bg-white border border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
+              class="w-78 h-46.5 bg-white border hidden md:flex border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
             >
               <svg class="w-18">
                 <use href="#Floating-box"></use>
@@ -629,7 +632,7 @@
               </p>
             </div>
             <div
-              class="w-78 h-46.5 bg-white border border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
+              class="w-78 h-46.5 bg-white border hidden md:flex border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
             >
               <svg class="w-18">
                 <use href="#24-Floating"></use>
@@ -640,7 +643,7 @@
               </p>
             </div>
             <div
-              class="w-78 h-46.5 bg-white border border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
+              class="w-78 h-46.5 bg-white border hidden md:flex border-gray-300 rounded-2xl flex flex-col text-center justify-center items-center px-4 py-6 gap-2"
             >
               <svg class="w-18">
                 <use href="#Floating-bag"></use>
@@ -697,49 +700,50 @@
           </div>
         </div>
         <!-- دکمه های رزرو -->
-        <div class="w-full mt-12 flex justify-center items-center">
-          <div class="w-fit flex gap-2">
-            <button
-              class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-[font] font-medium"
-            >
-              پرطرفدار
-            </button>
-            <button
-              class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-medium"
-            >
-              لوکس
-            </button>
-            <button
-              class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-medium"
-            >
-              اقتصادی
-            </button>
-          </div>
-          <div class="w-fit">
-            <button
-              class="w-[184px] h-[48px] flex items-center justify-center gap-[8px] text-[#194BF0] bg-transparent hover:bg-[#194BF0] hover:text-white rounded-[8px] px-4 py-1 text-base font-medium"
-            >
-              مشاهده همه
-              <svg
-                class="w-5 h-5 rotate-180 flex text-[#194BF0]"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a.75.75 0 01-.53-1.28l5-5a.75.75 0 010-1.06l-5-5a.75.75 0 111.06-1.06l5.75 5.75a.75.75 0 010 1.06l-5.75 5.75A.75.75 0 0110 18z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
+       <div class="w-full mt-12 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-0">
+  <div class="flex flex-col md:flex-row gap-2 md:gap-2 items-center">
+    <button
+      class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-medium"
+    >
+      پرطرفدار
+    </button>
+    <button
+      class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-medium"
+    >
+      لوکس
+    </button>
+    <button
+      class="w-32 h-12 text-[#194BF0] bg-transparent rounded-md border border-[#194BF0] hover:bg-[#194BF0] hover:text-white flex items-center justify-center text-base font-medium"
+    >
+      اقتصادی
+    </button>
+  </div>
+  <div class="w-fit mt-2 md:mt-0">
+    <button
+      class="w-[184px] h-[48px] flex items-center justify-center gap-[8px] text-[#194BF0] bg-transparent hover:bg-[#194BF0] hover:text-white rounded-[8px] px-4 py-1 text-base font-medium"
+    >
+      مشاهده همه
+      <svg
+        class="w-5 h-5 rotate-180 flex text-[#194BF0]"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a.75.75 0 01-.53-1.28l5-5a.75.75 0 010-1.06l-5-5a.75.75 0 111.06-1.06l5.75 5.75a.75.75 0 010 1.06l-5.75 5.75A.75.75 0 0110 18z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
         <!-- کارت خرید ماشین -->
         <div
           class="w-full h-fit flex flex-col items-center justify-center mt-6"
         >
           <!-- بالا -->
-          <div class="w-full flex gap-6">
+          <div class="w-full flex flex-col md:flex-row gap-4 md:gap-6">
             <div
               class="w-full h-fit bg-white border border-gray-300 rounded-2xl p-2 flex flex-col gap-2"
             >
@@ -892,7 +896,7 @@
             </div>
           </div>
           <!-- پایین -->
-          <div class="w-full flex gap-6 mt-6">
+          <div class="w-full flex gap-6 mt-6 hidden md:flex">
             <div
               class="w-full h-fit bg-white border border-gray-300 rounded-2xl p-2 flex flex-col gap-2"
             >
@@ -1059,9 +1063,9 @@
         </div>
       </div>
       <div class="w-10/12 flex justify-center mt-10">
-        <div class="relative w-full h-[650px]">
-          <div class="absolute top-10 left-0 w-[280px]">
-            <div class="flex gap-3 items-start">
+        <div class="relative w-full h-[650px] ">
+          <div class="absolute top-10 left-0 w-[280px] hidden md:flex">
+            <div class="flex gap-3 items-start hidden md:flex">
               <svg
                 width="41"
                 height="45"
@@ -1107,7 +1111,7 @@
                 />
               </svg>
 
-              <div class="flex flex-col">
+              <div class="flex flex-col hidden md:flex">
                 <p class="text-[20px] font-bold">
                   <span class="text-yellow-500">تاریخ </span>
                   تحویل را تعیین کنید.
@@ -1119,7 +1123,7 @@
             </div>
           </div>
 
-          <div class="absolute top-10 right-0 w-[280px]">
+          <div class="absolute top-10 right-0 w-[280px] hidden md:flex">
             <div class="flex gap-3 items-start">
               <svg
                 width="80"
@@ -1185,7 +1189,7 @@
                   stroke="#494949"
                 />
               </svg>
-              <div class="flex flex-col">
+              <div class="flex flex-col hidden md:flex">
                 <p class="text-[20px] font-bold">
                   <span class="text-yellow-500">خودروی </span>
                   خود را انتخاب کنید.
@@ -1197,7 +1201,7 @@
             </div>
           </div>
 
-          <div class="absolute bottom-10 left-0 w-[280px]">
+          <div class="absolute bottom-10 left-0 w-[280px] hidden md:flex">
             <div class="flex gap-3 items-start">
               <svg
                 width="80"
@@ -1238,7 +1242,7 @@
                   stroke="#494949"
                 />
               </svg>
-              <div class="flex flex-col">
+              <div class="flex flex-col hidden md:flex">
                 <p class="text-[20px] font-bold">
                   <span class="text-yellow-500">خودرو </span>
                   را دریافت کنید.
@@ -1250,7 +1254,7 @@
             </div>
           </div>
 
-          <div class="absolute bottom-10 right-0 w-[280px]">
+          <div class="absolute bottom-10 right-0 w-[280px] hidden md:flex">
             <div class="flex gap-3 items-end">
               <svg
                 width="80"
@@ -1302,7 +1306,7 @@
                 />
               </svg>
 
-              <div class="flex flex-col">
+              <div class="flex flex-col hidden md:flex">
                 <p class="text-[20px] font-bold">
                   <span class="text-yellow-500">هزینه </span>
                   اجاره را پرداخت کنید.
@@ -1342,7 +1346,7 @@
             <span class="text-Secondary font-bold">متداول</span>
           </div>
         </div>
-        <!-- باکس سوالات -->
+         <!-- باکس سوالات -->
         <div class="w-full h-11/12 flex gap-6 justify-between items-start">
           <!-- بخش سوالات -->
           <div class="w-7/10 h-full">
@@ -1469,10 +1473,11 @@
           </div>
         </div>
       </div>
+
       <!-- نظرات مشتریان -->
-      <div class="w-full flex flex-col justify-center items-center gap-y-12">
+      <div class="w-full flex flex-col justify-center items-center gap-y-12 hidden md:flex">
         <!-- هدر نظر مشتریان -->
-        <div class="w-fit">
+        <div class="w-fit hidden md:flex">
           <p class="text-2xl text-gray-500">
             آنچه مشتریان ما درموردمان گفته‌اند.
           </p>
@@ -1561,163 +1566,181 @@
         </div>
       </div>
       <!-- مقالات ما -->
-      <div class="w-10/12 flex flex-col justify-center items-center mt-12">
-        <!-- نوشته مقالات ما -->
-        <div class="w-fit flex flex-col justify-center items-center">
-          <p class="text-2xl text-gray-500">مقالات ما</p>
-          <div class="text-3xl text-center">
-            <span class="text-black font-bold">مجله</span>
-            <span class="text-Secondary font-bold">خودرو</span>
+<div class="w-10/12 flex flex-col justify-center items-center mt-12">
+  <!-- نوشته مقالات ما -->
+  <div class="w-fit flex flex-col justify-center items-center">
+    <p class="text-2xl text-gray-500">مقالات ما</p>
+    <div class="text-3xl text-center">
+      <span class="text-black font-bold">مجله</span>
+      <span class="text-Secondary font-bold">خودرو</span>
+    </div>
+  </div>
+
+  <!-- مشاهده همه -->
+  <div class="flex flex-row-reverse self-end mt-2">
+    <span>
+      <svg class="w-5 h-5">
+        <use href="#arrow-left"></use>
+      </svg>
+    </span>
+    <a class="text-blue-700" href="">مشاهده همه</a>
+  </div>
+
+  <!-- کارت مجله مقالات -->
+  <div
+    class="w-full h-fit flex flex-col md:flex-row justify-center items-center gap-7 mt-6"
+  >
+    <!-- کارت 1 -->
+    <div
+      class="w-full md:w-auto h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
+    >
+      <!-- عکس -->
+      <div class="w-full rounded-xl overflow-hidden">
+        <img
+          class="w-full"
+          src="./images/magazine-car-1.jpg"
+          alt="lexus"
+        />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
+
+        <p class="text-xs text-gray-400">
+          امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
+          به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+          تحولاتی شده است.
+        </p>
+
+        <div class="flex space-x-4">
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#clock"></use>
+            </svg>
+            <span class="text-gray-400">3دقیقه</span>
           </div>
-        </div>
-        <!-- مشاهده همه -->
-        <div class="flex flex-row-reverse justify-self-start self-end">
-          <span
-            ><svg class="w-5 h-5">
-              <use href="#arrow-left"></use></svg></span
-          ><a class="text-blue-700" href="">مشاهده همه</a>
-        </div>
-        <!-- کارت مجله مقالات -->
-        <div class="w-full h-97.5 flex justify-center items-center gap-7 mt-6">
-          <!-- کارت 1 -->
-          <div
-            class="h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
-          >
-            <!-- عکس -->
-            <div class="w-full rounded-xl overflow-hidden">
-              <img
-                class="w-full"
-                src="./images/magazine-car-1.jpg"
-                alt="lexus"
-              />
-            </div>
-            <div class="flex flex-col gap-4">
-              <!-- روش ها -->
-              <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
-              <!-- امروزه -->
-              <p class="text-xs text-gray-400">
-                 امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
-                به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
-                تحولاتی شده است.
-              </p>
-              <!-- ساعت -->
-              <div class="flex space-x-4">
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#clock"></use>
-                  </svg>
-                  <span class="text-gray-400">3دقیقه</span>
-                </div>
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#eye-ico"></use>
-                  </svg>
-                  <span class="text-gray-400">1,213</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- کارت 2 -->
-          <div
-            class="h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
-          >
-            <!-- عکس -->
-            <div class="w-full rounded-xl overflow-hidden">
-              <img
-                class="w-full"
-                src="./images/magazine-car-2.jpg"
-                alt="lexus"
-              />
-            </div>
-            <div class="flex flex-col gap-4">
-              <!-- روش ها -->
-              <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
-              <!-- امروزه -->
-              <p class="text-xs text-gray-400">
-                 امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
-                به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
-                تحولاتی شده است.
-              </p>
-              <!-- ساعت -->
-              <div class="flex space-x-4">
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#clock"></use>
-                  </svg>
-                  <span class="text-gray-400">3دقیقه</span>
-                </div>
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#eye-ico"></use>
-                  </svg>
-                  <span class="text-gray-400">1,213</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- کارت 3 -->
-          <div
-            class="h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
-          >
-            <!-- عکس -->
-            <div class="w-full rounded-xl overflow-hidden">
-              <img
-                class="w-full"
-                src="./images/magazine-car-3.jpg"
-                alt="lexus"
-              />
-            </div>
-            <div class="flex flex-col gap-4">
-              <!-- روش ها -->
-              <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
-              <!-- امروزه -->
-              <p class="text-xs text-gray-400">
-                 امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
-                به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
-                تحولاتی شده است.
-              </p>
-              <!-- ساعت -->
-              <div class="flex space-x-4">
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#clock"></use>
-                  </svg>
-                  <span class="text-gray-400">3دقیقه</span>
-                </div>
-                <div class="flex space-x-2">
-                  <svg class="w-5 h-5">
-                    <use href="#eye-ico"></use>
-                  </svg>
-                  <span class="text-gray-400">1,213</span>
-                </div>
-              </div>
-            </div>
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#eye-ico"></use>
+            </svg>
+            <span class="text-gray-400">1,213</span>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- کارت 2 -->
+    <div
+      class="w-full md:w-auto h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
+    >
+      <div class="w-full rounded-xl overflow-hidden">
+        <img
+          class="w-full"
+          src="./images/magazine-car-2.jpg"
+          alt="lexus"
+        />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
+
+        <p class="text-xs text-gray-400">
+          امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
+          به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+          تحولاتی شده است.
+        </p>
+
+        <div class="flex space-x-4">
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#clock"></use>
+            </svg>
+            <span class="text-gray-400">3دقیقه</span>
+          </div>
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#eye-ico"></use>
+            </svg>
+            <span class="text-gray-400">1,213</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- کارت 3 -->
+    <div
+      class="w-full md:w-auto h-97.5 rounded-2xl flex flex-col justify-between items-center bg-white p-3 space-y-4"
+    >
+      <div class="w-full rounded-xl overflow-hidden">
+        <img
+          class="w-full"
+          src="./images/magazine-car-3.jpg"
+          alt="lexus"
+        />
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <p class="text-lg text-black">روش های مختلف برای اجاره خودرو</p>
+
+        <p class="text-xs text-gray-400">
+          امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع
+          به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+          تحولاتی شده است.
+        </p>
+
+        <div class="flex space-x-4">
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#clock"></use>
+            </svg>
+            <span class="text-gray-400">3دقیقه</span>
+          </div>
+          <div class="flex space-x-2">
+            <svg class="w-5 h-5">
+              <use href="#eye-ico"></use>
+            </svg>
+            <span class="text-gray-400">1,213</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
     <!-- فوتر -->
-    <footer class="flex justify-center items-center mt-20 pb-16">
-      <div class="w-10/12 h-108 bg-gray-950 rounded-2xl p-14">
+    <footer class="flex flex-col md:flex-row justify-center items-center mt-12 md:mt-20 pb-8 md:pb-16">
+      <div class="w-11/12 md:w-10/12 h-auto md:h-108 bg-gray-950 rounded-2xl p-6 md:p-14 mx-auto">
         <!-- باکس بردر دار اطلاعات تماس -->
-        <div
-          class="w-full h-25.25 flex justify-around items-center p-4 rounded-2xl border border-gray-400"
-        >
+       <div
+  class="w-full h-auto md:h-25.25
+         flex flex-col md:flex-row
+         justify-center md:justify-around
+         items-center
+         gap-4 md:gap-0
+         p-4
+         rounded-2xl
+         border border-gray-400"
+>
+
           <!-- تلفن -->
-          <div class="flex space-x-1.5">
-            <div
-              class="w-12 h-12 p-2 flex justify-center items-center rounded-2xl border border-gray-400"
-            >
-              <svg class="w-full">
-                <use href="#phone"></use>
-              </svg>
-            </div>
-            <div class="text-center">
-              <p class="text-white">ارتباط با ما</p>
-              <p class="text-white">0912-21326545</p>
-            </div>
-          </div>
-          <div class="bg-gray-400 h-8 w-0.5"></div>
+          <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-1.5">
+  <div
+    class="w-10 h-10 md:w-12 md:h-12 p-2 flex justify-center items-center rounded-2xl border border-gray-400"
+  >
+    <svg class="w-full">
+      <use href="#phone"></use>
+    </svg>
+  </div>
+
+  <div class="text-center md:text-center">
+    <p class="text-sm md:text-base text-white">ارتباط با ما</p>
+    <p class="text-sm md:text-base text-white">0912-21326545</p>
+  </div>
+</div>
+
+<!-- جداکننده -->
+<div class="hidden md:block bg-gray-400 h-8 w-0.5"></div>
+
           <!-- پیام رسان -->
           <div class="flex space-x-1.5">
             <div
@@ -1756,7 +1779,7 @@
               <img src="./images/Logo-footer.png" alt="" />
             </div>
             <div class="">
-              <p class="text-white text-sm">
+              <p class="text-white text-sm hidden md:flex">
                 اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
                 ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
                 تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
